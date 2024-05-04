@@ -22,4 +22,5 @@ Logic Gates challenges you to solve puzzles by manipulating gates and switching 
 
 - **Download:** Download for windows or Play it online at [Logic Gates](https://majedev.itch.io/).
 
+## Gameplay
 - **Demo:** (Include a GIF or video demonstration of gameplay)
