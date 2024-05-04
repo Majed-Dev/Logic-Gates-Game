@@ -18,12 +18,15 @@ public class Gate : MonoBehaviour
     [SerializeField] private string currentGate = "and";
     private int index = 0;
 
+    AudioManager audioManager;
+
 
 
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         mask = GetComponent<SpriteMask>();
+        audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
         currentGate = gate[0];
         if (!gateSwitchable)
             spriteRenderer.color = Color.yellow;
@@ -48,12 +51,12 @@ public class Gate : MonoBehaviour
     {
         switch (index)
         {
-            case 0: return line1.GetComponent<Line>().getIsActive() & line2.GetComponent<Line>().getIsActive(); break;
-            case 1: return line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive(); break;
-            case 2: return !(line1.GetComponent<Line>().getIsActive() & line2.GetComponent<Line>().getIsActive()); break;
-            case 3: return !(line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive()); break;
-            case 4: return !(line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive()); break;
-            case 5: return line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive(); break;
+            case 0: return line1.GetComponent<Line>().getIsActive() & line2.GetComponent<Line>().getIsActive();
+            case 1: return line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive();
+            case 2: return !(line1.GetComponent<Line>().getIsActive() & line2.GetComponent<Line>().getIsActive());
+            case 3: return !(line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive());
+            case 4: return !(line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive());
+            case 5: return line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive();
 
             default: return false;
         }
@@ -87,8 +90,13 @@ public class Gate : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if(!gateSwitchable) return;
+        if (!gateSwitchable)
+        {
+            audioManager.PlaySFX(audioManager.blockedGate);
+            return;
+        }
 
+        audioManager.PlaySFX(audioManager.gate);
         OnClick?.Invoke();
     }
 
