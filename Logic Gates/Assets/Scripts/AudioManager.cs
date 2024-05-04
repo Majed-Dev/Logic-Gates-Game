@@ -17,7 +17,6 @@ public class AudioManager : MonoBehaviour
     public AudioClip switchClick;
     public AudioClip notSwitchable;
 
-
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);

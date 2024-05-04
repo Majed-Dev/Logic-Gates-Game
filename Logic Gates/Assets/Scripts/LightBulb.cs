@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LightBulb : MonoBehaviour
 {
-    private bool on;
+    public bool bulbOn;
     private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite onSprite, offSprite;
     [SerializeField] Line line;
@@ -20,6 +20,7 @@ public class LightBulb : MonoBehaviour
     {
         if (line.getIsActive())
         {
+            bulbOn = true;
             spriteRenderer.sprite = onSprite;
             spriteRenderer.color = Color.yellow;
             PlayWinSound();
@@ -27,6 +28,7 @@ public class LightBulb : MonoBehaviour
         }
         else
         {
+            bulbOn= false;
             winAudioPlayed = false;
             spriteRenderer.sprite = offSprite;
             spriteRenderer.color = Color.white;

@@ -23,8 +23,10 @@ public class Switch : MonoBehaviour
         else
             spriteRenderer.sprite = offSprite;
 
-        if (!isSwitchable)
+        if (!isSwitchable && !on)
             spriteRenderer.color = Color.red;
+        else if(!isSwitchable && on)
+            spriteRenderer.color = Color.green;
     }
 
     private void OnMouseDown()

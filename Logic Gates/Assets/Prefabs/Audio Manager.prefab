@@ -309,4 +309,6 @@ MonoBehaviour:
   musicClip: {fileID: 8300000, guid: e5f5ceabe17f4d54787279ea163131e6, type: 3}
   gate: {fileID: 8300000, guid: 3720646cab6ee2f4a947ddacf8336f83, type: 3}
   blockedGate: {fileID: 8300000, guid: 935238b1164a67748b0e6f055f476757, type: 3}
-  win: {fileID: 8300000, guid: a0d266f98678c0041aea0c726ac40bf9, type: 3}
+  lightOn: {fileID: 8300000, guid: 988ee90549ac79e4c8f4e48255dd3455, type: 3}
+  switchClick: {fileID: 8300000, guid: 1cca5434a88b8c140b6f0794b525245c, type: 3}
+  notSwitchable: {fileID: 8300000, guid: 44dfd68681adc9841bd8f845649efac6, type: 3}
