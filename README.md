@@ -1,3 +1,5 @@
+![image](https://github.com/Majed-Dev/Logic-Gates-Game/assets/148640821/b9ffa283-434b-4dc6-b76c-3ff3cdf49244)
+
 # Logic Gates🔌
 
 Logic Gates challenges you to solve puzzles by manipulating gates and switching bits.
