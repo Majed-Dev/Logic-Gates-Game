@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    [SerializeField] private bool on = false;
+    [SerializeField] private bool isSwitchOn = false;
     [SerializeField] private bool isSwitchable = true;
-    [SerializeField] private Line line;
+    [SerializeField] private Line[] lines;
     SpriteRenderer spriteRenderer;
     [SerializeField] Sprite onSprite, offSprite;
     AudioManager audioManager;
@@ -17,15 +17,18 @@ public class Switch : MonoBehaviour
     }
     private void Update()
     {
-        line.setIsActive(on);
-        if(on)
+        foreach(Line line in lines)
+        {
+            line.setIsActive(isSwitchOn);
+        }
+        if(isSwitchOn)
           spriteRenderer.sprite = onSprite;
         else
             spriteRenderer.sprite = offSprite;
 
-        if (!isSwitchable && !on)
+        if (!isSwitchable && !isSwitchOn)
             spriteRenderer.color = Color.red;
-        else if(!isSwitchable && on)
+        else if(!isSwitchable && isSwitchOn)
             spriteRenderer.color = Color.green;
     }
 
@@ -38,13 +41,13 @@ public class Switch : MonoBehaviour
         }
         
         audioManager.PlaySFX(audioManager.switchClick);
-        if (on)
+        if (isSwitchOn)
         {
-            on = false;
+            isSwitchOn = false;
         }
-        else if (!on)
+        else if (!isSwitchOn)
         {
-            on = true;
+            isSwitchOn = true;
         }
     }
 }

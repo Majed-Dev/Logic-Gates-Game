@@ -9,7 +9,31 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 0c6561b4893a34f40ae3c6ca0ffe2dbb
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/Switch Tutorial 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Switch Tutorial 2.unity
+    guid: 1d1d5a82b91ab0b4ca92e30729cc3d01
+  - enabled: 1
+    path: Assets/Scenes/Switch Tutorial 3.unity
+    guid: 613dafa5ac6b8b1409ff0b10ea570e23
+  - enabled: 1
+    path: Assets/Scenes/Tutorial 4.unity
+    guid: a5962f4fcf156314f803f27b12e78b44
+  - enabled: 1
+    path: Assets/Scenes/Tutorial 5.unity
+    guid: 87eba8d01e4af7347acd1e77fe67f15a
+  - enabled: 1
+    path: Assets/Scenes/Tutorial 6.unity
+    guid: 5afa7471ca96a524c8c4555ee0b6ccec
+  - enabled: 1
+    path: Assets/Scenes/Gameplay 1.unity
+    guid: c42bdd83ed3733142825f9c26f1f60a4
+  - enabled: 1
+    path: Assets/Scenes/Gameplay 2.unity
+    guid: 91b67e541b1c9ad41b01300abe23ae5c
+  - enabled: 1
+    path: Assets/Scenes/Gameplay 3.unity
+    guid: 890c2a744646d6a4bbafc77c57d60ae7
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -12,18 +12,19 @@ public class MainMenu : MonoBehaviour
     }
     public void Play()
     {
+        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-        audioManager.PlaySFX(audioManager.gate);
+        audioManager.PlaySFX(audioManager.switchClick);
     }
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
-        audioManager.PlaySFX(audioManager.gate);
+        audioManager.PlaySFX(audioManager.switchClick);
     }
     public void Quit()
     {
         Application.Quit();
         print("Quit");
-        audioManager.PlaySFX(audioManager.blockedGate);
+        audioManager.PlaySFX(audioManager.switchClick);
     }
 }

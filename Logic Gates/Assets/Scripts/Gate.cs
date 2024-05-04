@@ -14,9 +14,8 @@ public class Gate : MonoBehaviour
     [SerializeField] private GameObject lineIn1,lineIn2,lineOut;
     SpriteMask mask;
 
-    private string[] gate = {"and", "or","nand","nor","xnor","xor"};
-    [SerializeField] private string currentGate = "and";
-    private int index = 0;
+    private string[] gate = {"and", "or","nand","nor", "xor", "xnor"};
+    [SerializeField]private int index = 0;
 
     AudioManager audioManager;
 
@@ -27,7 +26,6 @@ public class Gate : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         mask = GetComponent<SpriteMask>();
         audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>();
-        currentGate = gate[0];
         if (!gateSwitchable)
             spriteRenderer.color = Color.yellow;
     }
@@ -35,6 +33,7 @@ public class Gate : MonoBehaviour
     {
         //updating sprite mask when switching
         mask.sprite = GetComponent<SpriteRenderer>().sprite;
+        SwitchGateSprite();
         SetLineOutState();
     }
     private void OnEnable()
@@ -55,8 +54,8 @@ public class Gate : MonoBehaviour
             case 1: return line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive();
             case 2: return !(line1.GetComponent<Line>().getIsActive() & line2.GetComponent<Line>().getIsActive());
             case 3: return !(line1.GetComponent<Line>().getIsActive() | line2.GetComponent<Line>().getIsActive());
-            case 4: return !(line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive());
-            case 5: return line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive();
+            case 4: return line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive();
+            case 5: return !(line1.GetComponent<Line>().getIsActive() ^ line2.GetComponent<Line>().getIsActive());
 
             default: return false;
         }

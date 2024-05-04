@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 1e2f946b2ae48a6439ebf8d01075df22
+guid: 4fee9dbcd3aa8bb40a4e96b4f61bf68f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1494352897237206093
-    second: Switch_0
-  - first:
-      213: 5207117429831932417
-    second: Switch_1
+      213: 6140999357471460762
+    second: Switch-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -168,43 +165,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Switch_0
+      name: Switch-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 10
-        width: 299
-        height: 405
+        x: 0
+        y: 0
+        width: 325
+        height: 362
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bbb91715fdf24be0800000000000000
-      internalID: -1494352897237206093
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Switch_1
-      rect:
-        serializedVersion: 2
-        x: 509
-        y: 10
-        width: 298
-        height: 404
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10a90e4c6b5634840800000000000000
-      internalID: 5207117429831932417
+      spriteID: a9d0df31166393550800000000000000
+      internalID: 6140999357471460762
       vertices: []
       indices: 
       edges: []
@@ -212,7 +188,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4690f6c567e220541996fa9e896a8f20
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -220,9 +196,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Switch 1_0: -1541445869
-      Switch_0: -1494352897237206093
-      Switch_1: 5207117429831932417
+      Switch-removebg-preview_0: 6140999357471460762
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

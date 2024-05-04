@@ -14,7 +14,7 @@ public class LightBulb : MonoBehaviour
     void Start()
     {
         audioManager = GameObject.Find("Audio Manager").GetComponent<AudioManager>(); 
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     void Update()
     {
