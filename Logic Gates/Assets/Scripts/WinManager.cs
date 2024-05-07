@@ -52,6 +52,9 @@ public class WinManager : MonoBehaviour
     }
     public void NextButton()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        if (SceneManager.GetActiveScene().buildIndex + 1 < 12)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+            SceneManager.LoadScene(0);
     }
 }

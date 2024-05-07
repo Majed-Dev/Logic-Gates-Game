@@ -34,6 +34,15 @@ EditorBuildSettings:
     guid: 91b67e541b1c9ad41b01300abe23ae5c
   - enabled: 1
     path: Assets/Scenes/Gameplay 3.unity
-    guid: 890c2a744646d6a4bbafc77c57d60ae7
+    guid: e7e636276d82688448b25f357361b033
+  - enabled: 1
+    path: Assets/Scenes/Gameplay 4.unity
+    guid: 5f0a213ba2d78e44a90f5fedb5555e89
+  - enabled: 1
+    path: Assets/Scenes/Gameplay 5.unity
+    guid: 7f81b83a1eaed1746ab1d259042967dc
+  - enabled: 0
+    path: Assets/Scenes/Gameplay 6.unity
+    guid: c49c4e3c0502d3f4286b5d20e6c0616d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
